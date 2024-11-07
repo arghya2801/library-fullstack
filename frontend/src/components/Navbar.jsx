@@ -7,14 +7,14 @@ export const Navbar = () => {
     return (
         <header className='max-w-screen-2xl mx-auto px-4 py-6 '>
             <nav className='flex justify-between items-center'>
-                <div className='flex justify-between'>
+                <div className='flex justify-between items-center'>
                     <Link to="/">
-                        <IoLibrarySharp className='size-7' />
+                        <IoLibrarySharp className='size-8' />
                     </Link>
 
-                    <div className='relative space-x-2 w-60'>
-                        <IoIosSearch className='absolute inline-block space-x-2 inset-y-2'/>
-                        <input type="text" placeholder='Search' className='bg-gray-200 w-full rounded-xl px-4 py-1 focus:outline-none' />
+                    <div className="relative w-60 flex items-center mx-4">
+                        <input type="text" placeholder="Search" className="bg-gray-200 w-full rounded-xl pl-10 pr-4 py-1 focus:outline-none focus:ring-1 focus:ring-gray-300"/>
+                        <IoIosSearch className="absolute left-3 text-gray-500 inset-y-0 my-auto" />
                     </div>
 
                 </div>
